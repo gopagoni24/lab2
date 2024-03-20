@@ -1,66 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-<body>
-    <div class="container">
-    <div id="myCarousel" class="carousel slide">
-    <ol class="carousel-indicators">
-    <li class="item1"></li>
-    <li class="item2 active"></li>
-    <li class="item3"></li>
-    </ol>
-    <div class="carousel-inner" role="listitem">
-    <div class="item active">
-    <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    alt="image1" width="100%" height="100%">
-    </div>
-    <div class="item">
-        <img src="https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg"
-        alt="image2" width="100%" height="100%">
-    </div>
-    <div class="item">
-        <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="image3" width="100%" height="100%">
-    </div>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
+<body>
+    <div class="jumbotron text-center">
+        <h1 contenteditable>my first page using Bootstrap</h1>
+        <h3 contenteditable="true">Tagline</h3>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button">
-    <span class="glyphicon glyphicon-chevron-left" ariahidden="true"></span>
-    <span class="sr-only">Prev</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button">
-        <span class="glyphicon-chevron-right" ariahidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>  
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2>column1</h2>
+                <p>Curious which components explicitly require jQuery, our JavaScript, and Popper? Click the show
+                    components link below. If you’re unsure about the page structure, keep reading for an example page
+                    template.</p>
+            </div>
+            <div class="col-sm-3">
+                <h2>column2</h2>
+                <p>Curious which components explicitly require jQuery, our JavaScript, and Popper? Click the show
+                    components link below. If you’re unsure about the page structure, keep reading for an example page
+                    template.</p>
+            </div>
+            <div class="col-sm-3">
+                <h2>column3</h2>
+                <p>Curious which components explicitly require jQuery, our JavaScript, and Popper? Click the show
+                    components link below. If you’re unsure about the page structure, keep reading for an example page
+                    template.</p>
+            </div>
+            <div class="col-sm-3">
+                <h2>column4</h2>
+                <p>Curious which components explicitly require jQuery, our JavaScript, and Popper? Click the show
+                    components link below. If you’re unsure about the page structure, keep reading for an example page
+                    template.</p>
+            </div>
+        </div>
     </div>
-    </div>
-    <script>
-        $(document).ready(function(){
-        $("#myCarousel").carousel();
-        $(".item1").click(function(){
-        $("#myCarousel").carousel(0);
-        })
-        $(".item2").click(function(){
-        $("#myCarousel").carousel(1);
-        })
-        $(".item3").click(function(){
-        $("#myCarousel").carousel(2);
-        })
-        $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
-        })
-        $(".right").click(function(){
-        $("#myCarousel").carousel("next");
-        })
-        });
-        </script>
 </body>
+
 </html>
